@@ -57,6 +57,13 @@
       font-weight: bold;
     }
 
+    .filter-btn {
+      padding: 6px 12px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
   </style>
 </head>
 
@@ -66,6 +73,13 @@
   <a href="#completed">Completed</a>
   <a href="#upcoming">Upcoming</a>
 </nav>
+
+<!-- FILTER BUTTONS -->
+<div style="margin:20px;">
+  <button class="filter-btn" onclick="showAll()">All</button>
+  <button class="filter-btn" onclick="showCompleted()">Completed</button>
+  <button class="filter-btn" onclick="showUpcoming()">Upcoming</button>
+</div>
 
 <h1>🏏 T20 World Cup 2026 Schedule</h1>
 
@@ -188,6 +202,23 @@
   <div class="match knockout">Final – TBD vs TBD</div>
 
 </section>
+
+<script>
+function showAll() {
+  document.getElementById("completed").style.display = "block";
+  document.getElementById("upcoming").style.display = "block";
+}
+
+function showCompleted() {
+  document.getElementById("completed").style.display = "block";
+  document.getElementById("upcoming").style.display = "none";
+}
+
+function showUpcoming() {
+  document.getElementById("completed").style.display = "none";
+  document.getElementById("upcoming").style.display = "block";
+}
+</script>
 
 </body>
 </html>

@@ -1,116 +1,193 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>T20 World Cup 2026 Scores</title>
+  <title>T20 World Cup 2026 – Full Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
       background: #0b1c2d;
       color: white;
-      margin: 0;
-      padding: 0;
       text-align: center;
-      transition: background 0.3s ease, color 0.3s ease;
     }
 
-    .navbar {
+    nav {
       background: #06121f;
-      padding: 15px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 15px;
+      position: sticky;
+      top: 0;
     }
 
-    .navbar a {
+    nav a {
       color: white;
-      margin: 0 10px;
+      margin: 0 15px;
       text-decoration: none;
+      font-weight: bold;
     }
 
-    .navbar button {
-      padding: 6px 12px;
-      border: none;
-      cursor: pointer;
+    h1 {
+      margin-top: 30px;
+    }
+
+    section {
+      width: 90%;
+      max-width: 800px;
+      margin: 40px auto;
+      text-align: left;
+    }
+
+    .date-heading {
+      background: #122c44;
+      padding: 10px;
+      margin-top: 25px;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.1rem;
     }
 
     .match {
-      background: #122c44;
-      margin: 20px auto;
-      padding: 20px;
-      width: 300px;
-      border-radius: 8px;
+      margin-left: 20px;
+      padding: 4px 0;
     }
 
-    /* Light Mode */
-    .light-mode {
-      background: #ffffff;
-      color: #111;
+    .knockout {
+      color: #ffd700;
+      font-weight: bold;
     }
 
-    .light-mode .navbar {
-      background: #eaeaea;
-    }
-
-    .light-mode .navbar a {
-      color: #111;
-    }
-
-    .light-mode .match {
-      background: #f0f0f0;
-      color: #111;
-    }
   </style>
 </head>
 
 <body>
 
-  <nav class="navbar">
-    <span>🏏 T20 World Cup 2026</span>
-    <div>
-      <a href="#completed">Completed</a>
-      <a href="#upcoming">Upcoming</a>
-      <button onclick="toggleMode()">Toggle Mode</button>
-    </div>
-  </nav>
+<nav>
+  <a href="#completed">Completed</a>
+  <a href="#upcoming">Upcoming</a>
+</nav>
 
-  <h1>T20 World Cup Scores</h1>
+<h1>🏏 T20 World Cup 2026 Schedule</h1>
 
-  <h2 id="completed">Completed Matches</h2>
+<!-- COMPLETED SECTION -->
+<section id="completed">
+  <h2>Completed Matches</h2>
 
-  <div class="match">
-    <h3>India vs Pakistan</h3>
-    <p>IND: 185/6 (20)</p>
-    <p>PAK: 170/8 (20)</p>
-    <strong>India won by 15 runs</strong>
-  </div>
+  <div class="date-heading">Feb 07, 2026</div>
+  <div class="match">PAK vs NED</div>
+  <div class="match">WI vs SCO</div>
+  <div class="match">IND vs USA</div>
 
-  <div class="match">
-    <h3>Australia vs England</h3>
-    <p>AUS: 160/7 (20)</p>
-    <p>ENG: 162/5 (18.4)</p>
-    <strong>England won by 5 wickets</strong>
-  </div>
+  <div class="date-heading">Feb 08, 2026</div>
+  <div class="match">NZ vs AFG</div>
+  <div class="match">ENG vs NEP</div>
+  <div class="match">SRI vs IRL</div>
 
-  <div class="match">
-    <h3>India vs Netherlands</h3>
-    <p>IND: 193/6 (20)</p>
-    <p>NED: 176/7 (20)</p>
-    <strong>India won by 17 runs</strong>
-  </div>
+  <div class="date-heading">Feb 09, 2026</div>
+  <div class="match">SCO vs ITA</div>
+  <div class="match">ZIM vs OMA</div>
+  <div class="match">SA vs CAN</div>
 
-  <h2 id="upcoming">Upcoming Matches</h2>
+  <div class="date-heading">Feb 10, 2026</div>
+  <div class="match">NED vs NAM</div>
+  <div class="match">NZ vs UAE</div>
+  <div class="match">PAK vs USA</div>
 
-  <div class="match">
-    <h3>India vs Australia</h3>
-    <p>Starts at 7:30 PM IST</p>
-  </div>
+  <div class="date-heading">Feb 11, 2026</div>
+  <div class="match">SA vs AFG</div>
+  <div class="match">AUS vs IRL</div>
+  <div class="match">ENG vs WI</div>
 
-  <script>
-    function toggleMode() {
-      document.body.classList.toggle("light-mode");
-    }
-  </script>
+  <div class="date-heading">Feb 12, 2026</div>
+  <div class="match">SRI vs OMA</div>
+  <div class="match">NEP vs ITA</div>
+  <div class="match">IND vs NAM</div>
+
+  <div class="date-heading">Feb 13, 2026</div>
+  <div class="match">AUS vs ZIM</div>
+  <div class="match">CAN vs UAE</div>
+  <div class="match">USA vs NED</div>
+
+  <div class="date-heading">Feb 14, 2026</div>
+  <div class="match">IRL vs OMA</div>
+  <div class="match">ENG vs SCO</div>
+  <div class="match">NZ vs SA</div>
+
+</section>
+
+
+<!-- UPCOMING SECTION -->
+<section id="upcoming">
+  <h2>Upcoming Matches</h2>
+
+  <div class="date-heading">Feb 15, 2026</div>
+  <div class="match">WI vs NEP</div>
+  <div class="match">USA vs NAM</div>
+  <div class="match">IND vs PAK</div>
+
+  <div class="date-heading">Feb 16, 2026</div>
+  <div class="match">AFG vs UAE</div>
+  <div class="match">ENG vs ITA</div>
+  <div class="match">AUS vs SRI</div>
+
+  <div class="date-heading">Feb 17, 2026</div>
+  <div class="match">NZ vs CAN</div>
+  <div class="match">IRL vs ZIM</div>
+  <div class="match">SCO vs NEP</div>
+
+  <div class="date-heading">Feb 18, 2026</div>
+  <div class="match">SA vs UAE</div>
+  <div class="match">PAK vs NAM</div>
+  <div class="match">IND vs NED</div>
+
+  <div class="date-heading">Feb 19, 2026</div>
+  <div class="match">WI vs ITA</div>
+  <div class="match">SRI vs ZIM</div>
+  <div class="match">AFG vs CAN</div>
+
+  <div class="date-heading">Feb 20, 2026</div>
+  <div class="match">AUS vs OMA</div>
+
+  <div class="date-heading">Feb 21, 2026</div>
+  <div class="match">NZ vs PAK</div>
+
+  <div class="date-heading">Feb 22, 2026</div>
+  <div class="match">SRI vs ENG</div>
+  <div class="match">IND vs SA</div>
+
+  <div class="date-heading">Feb 23, 2026</div>
+  <div class="match">ZIM vs WI</div>
+
+  <div class="date-heading">Feb 24, 2026</div>
+  <div class="match">ENG vs PAK</div>
+
+  <div class="date-heading">Feb 25, 2026</div>
+  <div class="match">SRI vs NZ</div>
+
+  <div class="date-heading">Feb 26, 2026</div>
+  <div class="match">WI vs SA</div>
+  <div class="match">IND vs ZIM</div>
+
+  <div class="date-heading">Feb 27, 2026</div>
+  <div class="match">ENG vs NZ</div>
+
+  <div class="date-heading">Feb 28, 2026</div>
+  <div class="match">SRI vs PAK</div>
+
+  <div class="date-heading">Mar 01, 2026</div>
+  <div class="match">ZIM vs SA</div>
+  <div class="match">IND vs WI</div>
+
+  <div class="date-heading">Mar 04, 2026</div>
+  <div class="match knockout">Semifinal 1 – TBD vs TBD</div>
+
+  <div class="date-heading">Mar 05, 2026</div>
+  <div class="match knockout">Semifinal 2 – TBD vs TBD</div>
+
+  <div class="date-heading">Mar 08, 2026</div>
+  <div class="match knockout">Final – TBD vs TBD</div>
+
+</section>
 
 </body>
 </html>
